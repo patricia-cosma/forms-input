@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Little Lemon</title>
+    </head>
+    <body>
+        <h2>Forms and the most common types of input</h2>
+        <form action="/registration" method="post">
+            <h3>1. Simple login example:</h3>
+            <!--to be more user-friendly, we'll display a label above the form-->
+            <label for="username">Username:</label><br>
+            <!--you can type any kind of text; this will be visible-->
+            <input type="text" name="username"><br>
+
+            <!--we'll also add a password field; when typing, the input will not be visible-->
+            <label for="password">Password:</label><br>
+            <input type="password" name="password"><br><br>
+
+            <!--after username & password, we can create a submit button to send the request-->
+            <input type="submit">
+
+            <!--you can also have checkboxes and radio buttons using only HTML-->
+            <h3>2. Checkboxes</h3>
+            <!--checkboxes-->
+            <input type="checkbox" name="dog" value="dog"> <!--we use the name and value attributes to configure how the data is send to the server-->
+            <!--here, as compared to the above types, label comes after input because this is the order we want to have them display in the browser-->
+            <label for="dog">I have a dog</label><br>
+            <input type="checkbox" name="cat" value="cat">
+            <label for="cat">I have a cat</label>
+
+            <!--radio boxes-->
+            <h3>3. Radio buttons</h3>
+            <input type="radio" name="left" value="left">
+            <label for="left">I am left-handed</label><br>
+            <input type="radio" name="right" value="right">
+            <label for="right">I am right-handed</label><br>
+            <input type="radio" name="ambi" value="ambi">
+            <label for="ambi">I am ambidextrous</label><br>
+
+            <!--number-->
+            <h3>4. Number</h3>
+            <!--you can type your age, but you can also use the up-and-down arrows to increase or decrease the number-->
+            <label for="age">My age is:</label><br>
+            <input type="number" name="age" value="age">
+
+            <!--email-->
+            <h3>5. Email</h3>
+            <label for="email">You can email me at:</label><br>
+            <input type="email" name="email">
+
+            <!--files-->
+            <h3>6. Files</h3>
+            <label for="file">Add your CV here:</label><br>
+            <input type="file" name="file">
+
+            <!--textarea / mutiple lines of text-->
+            <h3>7. Textarea</h3>
+            <textarea rows="5" cols="40"></textarea>
+
+            <!--drop-down list-->
+            <h3>8. Drop-down list</h3>
+            <select name="groceries">
+                <option value="avocado">Avocado</option>
+                <option value="beans">Beans</option>
+                <option value="banana">Banana</option>
+                <option value="yoghurt">Yoghurt</option>
+            </select>
+        </form>
+    </body>
+</html>
